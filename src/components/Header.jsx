@@ -16,7 +16,7 @@ const Header = () => {
         </h2>
         <div>
             <p className={highlight('/')}>Personal Info <span></span></p>
-            <p className={highlight('billing-info')}>Billing Info <span></span></p>
+            <p className={highlight('/billing-info')}>Billing Info <span></span></p>
             <p className={highlight('/confirm-payment')}>Confirm Payment <span></span> </p>
         </div>
     </header>
