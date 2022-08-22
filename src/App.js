@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PersonalInfo from "./pages/PersonalInfo";
 import BillingInfo from "./pages/BillingInfo";
 import ConfirmPayment from "./pages/ConfirmPayment";
-import PaymentConfirmed from "./pages/PersonalInfo";
+import PaymentConfirmed from "./pages/PaymentConfirmed";
 
 function App() {
   return (
