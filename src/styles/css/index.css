@@ -300,4 +300,49 @@ section .submit button:last-child {
   margin-left: 20px;
   background: none;
 }
+
+.payment--confirmed {
+  font-size: 0.5rem;
+  padding: 3em;
+  -webkit-box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+          box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+  border-radius: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 50px auto;
+}
+
+@media (min-width: 768px) {
+  .payment--confirmed {
+    font-size: 1rem;
+  }
+}
+
+.payment--confirmed .check {
+  padding: 1em;
+  background: #FFFFFF;
+  color: #6FCF97;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  -webkit-box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+          box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+  border-radius: 50%;
+}
+
+.payment--confirmed h1 {
+  font-size: 2em;
+  color: #4E598C;
+}
+
+.payment--confirmed p {
+  color: #4F4F4F;
+}
+
+.payment--confirmed a {
+  color: #F2994A;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=index.css.map */
