@@ -192,4 +192,112 @@ main form .submit button:last-child {
   margin-left: 20px;
   background: none;
 }
+
+section {
+  width: 80%;
+  margin: 20px auto;
+}
+
+section > div:first-child {
+  padding: 1em;
+}
+
+section .confirm--payment {
+  font-size: 0.625rem;
+  -webkit-box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+          box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+  border-radius: 1em;
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  section .confirm--payment {
+    font-size: 1.25rem;
+  }
+}
+
+section .confirm--payment--header {
+  background: #2F80ED;
+  color: #FFFFFF;
+  border-radius: 1em 1em 0 0;
+  padding: 1em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+section .confirm--payment--body {
+  padding: 1em 1.5em;
+  margin: 1.5em;
+  border-bottom: 1px solid #817E9E;
+  font-size: 1em;
+}
+
+section .confirm--payment--body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .confirm--payment--footer {
+  padding: 1em 2em;
+  font-size: 1em;
+}
+
+section .confirm--payment--footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  border: 1px solid #817E9E;
+  border-radius: 0.2em;
+}
+
+section .submit {
+  border-radius: 0 0 1em 1em;
+  padding: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 2em;
+}
+
+section .submit--button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2C94C), to(#F2994A));
+  background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+  border-radius: 1em;
+  color: #F7F7FF;
+  border: none;
+  padding: 1em 5em;
+}
+
+section .submit button:last-child {
+  color: #4E598C;
+  border: none;
+  margin-left: 20px;
+  background: none;
+}
 /*# sourceMappingURL=index.css.map */
