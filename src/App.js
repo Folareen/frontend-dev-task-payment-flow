@@ -1,22 +1,20 @@
 import "./styles/css/index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PersonalInfo from "./pages/PersonalInfo";
+import BillingInfo from "./pages/BillingInfo";
+import ConfirmPayment from "./pages/ConfirmPayment";
+import PaymentConfirmed from "./pages/PersonalInfo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<PersonalInfo />} />
+        <Route path="/billing-info" element={<BillingInfo />} />
+        <Route path="/confirm-payment" element={<ConfirmPayment />} />
+        <Route path="/payment-confirmed" element={<PaymentConfirmed />} />
+      </Routes>
+    </Router>
   );
 }
 
