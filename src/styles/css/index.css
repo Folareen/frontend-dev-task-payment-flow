@@ -53,6 +53,8 @@ header div p span {
   position: absolute;
   width: 100%;
   bottom: -0.25em;
+  right: 0;
+  left: 0;
 }
 
 header div p:first-child {
@@ -128,13 +130,6 @@ main form .select--container {
           flex-direction: row;
 }
 
-main form .select--container select {
-  border-radius: 1em;
-  padding: 1em;
-  outline: 1px solid #4E598C;
-  border: none;
-}
-
 main form .select--container div:first-child {
   width: 60%;
   margin-right: 10%;
@@ -142,6 +137,37 @@ main form .select--container div:first-child {
 
 main form .select--container div {
   width: 30%;
+}
+
+main form select {
+  border-radius: 1em;
+  padding: 1em;
+  outline: 1px solid #4E598C;
+  border: none;
+}
+
+main form .card--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main form .card--container div:first-child {
+  width: 60%;
+  margin-right: 5%;
+}
+
+main form .card--container div {
+  width: 20%;
+}
+
+main form .card--container div:last-child {
+  width: 10%;
+  margin-left: 5%;
 }
 
 main form .submit {
