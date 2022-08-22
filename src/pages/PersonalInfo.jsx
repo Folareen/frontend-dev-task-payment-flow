@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const PersonalInfo = () => {
   return (
-    <div>PersonalInfo</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
