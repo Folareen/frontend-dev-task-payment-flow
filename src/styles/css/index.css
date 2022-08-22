@@ -9,10 +9,17 @@
 
 header {
   width: 100%;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    font-size: 2.25rem;
+  }
 }
 
 header h2 {
-  font-size: 36px;
+  font-size: 1em;
   color: #4E598C;
 }
 
@@ -31,20 +38,20 @@ header div {
 }
 
 header div p {
-  padding: 15px;
-  font-size: 24px;
+  padding: 0.6em;
+  font-size: 0.67em;
   color: #BDBDBD;
   position: relative;
 }
 
 header div p span {
   background-color: #F2994A;
-  border-radius: 10px;
-  height: 13px;
+  border-radius: 0.625em;
+  height: 0.5em;
   display: none;
   position: absolute;
   width: 100%;
-  bottom: -6.5px;
+  bottom: -0.25em;
 }
 
 header div p:first-child {
