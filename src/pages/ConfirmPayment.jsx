@@ -1,7 +1,15 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useNavigate } from 'react-router-dom'
 
 const ConfirmPayment = () => {
+  const navigate = useNavigate()
+
+  const next = (e) => {
+    e.preventDefault()
+    navigate('/payment-confirmed')
+  }
+
   return (
     <section>
       <div>
@@ -35,7 +43,7 @@ const ConfirmPayment = () => {
         </div>
       </div>
       <div className='submit'>
-        <button className='submit--button'>Next</button>
+        <button className='submit--button' onClick={next}>Pay</button>
         <button>Cancel Payment</button>
       </div>
     </section>

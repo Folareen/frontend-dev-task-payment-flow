@@ -7,6 +7,14 @@
   font-family: Poppins;
 }
 
+body {
+  background-image: linear-gradient(170deg, rgba(242, 201, 76, 0.2) 70%, rgba(255, 255, 255, 0) calc(70% + 2px));
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
 header {
   width: 100%;
   font-size: 1.5rem;
@@ -38,14 +46,16 @@ header div {
           justify-content: space-between;
 }
 
-header div p {
+header div a {
   padding: 0.6em;
   font-size: 0.67em;
   color: #BDBDBD;
   position: relative;
+  display: block;
+  text-decoration: none;
 }
 
-header div p span {
+header div a span {
   background-color: #F2994A;
   border-radius: 0.625em;
   height: 0.5em;
@@ -57,21 +67,22 @@ header div p span {
   left: 0;
 }
 
-header div p:first-child {
+header div a:first-child {
   padding-left: 0;
 }
 
-header div p.current {
+header div a.current {
   color: #F2994A;
 }
 
-header div p.current span {
+header div a.current span {
   display: block;
 }
 
 main {
   width: 80%;
-  margin: 20px auto;
+  margin: 5em auto;
+  max-width: 700px;
   font-size: 0.625rem;
 }
 
@@ -310,7 +321,7 @@ section .submit button:last-child {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 @media (min-width: 768px) {

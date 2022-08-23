@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
 const Header = () => {
     const location = useLocation()
@@ -15,9 +15,9 @@ const Header = () => {
             Complete your Purchase
         </h2>
         <div>
-            <p className={highlight('/')}>Personal Info <span></span></p>
-            <p className={highlight('/billing-info')}>Billing Info <span></span></p>
-            <p className={highlight('/confirm-payment')}>Confirm Payment <span></span> </p>
+            <Link to='/' className={highlight('/')}>Personal Info <span></span></Link>
+            <Link to='/billing-info' className={highlight('/billing-info')}>Billing Info <span></span></Link>
+            <Link to='/confirm-payment' className={highlight('/confirm-payment')}>Confirm Payment <span></span> </Link>
         </div>
     </header>
   )

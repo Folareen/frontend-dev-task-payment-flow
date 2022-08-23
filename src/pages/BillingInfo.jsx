@@ -1,7 +1,15 @@
 import React from 'react'
 import Header from '../components/Header'
+import { useNavigate } from 'react-router-dom'
 
 const BillingInfo = () => {
+  const navigate = useNavigate()
+
+  const next = () => {
+    
+  }
+
+
   return (
     <main>
       <Header />
